@@ -1,0 +1,33 @@
+CREATE TABLE IF NOT EXISTS alumnos(
+	nombre VARCHAR(25),
+    	apellido VARCHAR(25),
+	carrera VARCHAR(25),
+    	nro_matricula INT PRIMARY KEY,
+    	email VARCHAR(50),
+    	telefono VARCHAR(11)
+);
+
+CREATE TABLE IF NOT EXISTS emails(
+    id_email INT PRIMARY KEY,
+    email VARCHAR(50)
+);
+
+CREATE TABLE IF NOT EXISTS consulta(
+	nombre VARCHAR(25),
+    	apellido VARCHAR(25),
+	carrera VARCHAR(25),
+    	nro_matricula INT PRIMARY KEY,
+    	email VARCHAR(50),
+    	telefono VARCHAR(11)
+);
+
+CREATE TABLE IF NOT EXISTS administrador(
+    usuario VARCHAR(20) PRIMARY KEY,
+    contrasena VARCHAR(50)
+);
+INSERT INTO administrador (usuario,contrasena) VALUES ("jefe","9999");
+
+CREATE TABLE IF NOT EXISTS carreras(
+    id INT PRIMARY KEY,
+    carrera VARCHAR(50)
+);
